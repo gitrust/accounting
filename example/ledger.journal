@@ -1,0 +1,42 @@
+; journal created 2018-06-18 by hledger
+;
+
+# Liabilities = Verbindlichkeiten, Schulden die ich habe
+#    , Verbindlichkeitskonten (Darlehen), Kreditkarten, Zehnte
+# Assets = Vermögenswerte (Bank, Geld), Geld das ich habe
+# Income = Einnahmen, Lohn
+# Equity Accounts = Eigenkapital Konten
+# Expenses = Ausgaben
+
+account assets							1000
+account assets:Cash
+account assets:Bank
+account assets:Bank:Konto1				1100
+account assets:Bank:Sparbuch
+account liabilities						2000
+account liabilities:Schulden
+account equity							3000
+account income							4000
+account income:Geschenk
+account income:Kindergeld
+account income:Lohn
+account expenses						6000
+account expenses:Auto
+account expenses:Auto:Sprit
+account expenses:Auto:Reparatur
+account expenses:Auto:Versicherung
+account expenses:Auto:Steuer
+account expenses:Bahn
+account expenses:Buecher
+account expenses:Essen
+account expenses:Freizeit
+account expenses:Hausmiete
+account expenses:Schule
+account expenses:Versicherung
+
+alias Guthaben = assets
+alias EC = assets.Bank.Konto1
+
+2018/06/20 test
+    EC                       12
+    assets:Cash             -12

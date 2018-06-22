@@ -1,0 +1,9 @@
+# HH:MM[:SS][+-ZZZZ] some:account  optionaal description after two spaces
+i 2018/06/19 07:34 projectA
+o 2018/06/19 10:00
+i 2018/06/19 10:00 projectB
+o 2018/06/19 17:33
+i 2018/06/20 07:34 projectB:subproject1
+o 2018/06/20 10:00
+i 2018/06/20 10:00 projectB:subproject2
+o 2018/06/20 10:33

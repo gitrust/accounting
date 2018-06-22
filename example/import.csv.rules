@@ -1,0 +1,13 @@
+skip 1
+
+fields date, description, amount
+date-format %d/%m/%Y
+  
+# always set the first account to assets:bank:checking
+account1 assets:Bank:Konto1
+
+account2 income:Lohn
+if SAVINGS
+  account2 assets:Bank
+
+
