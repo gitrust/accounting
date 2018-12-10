@@ -3,6 +3,5 @@
 :: Print last clock postings
 ::
 setlocal
-set LEDGER_FILE=%HOMEDRIVE%/time.timeclock
-tail %LEDGER_FILE%
+powershell -command "Get-Content %LEDGER_FILE%  -Tail 1"
 endlocal

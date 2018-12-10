@@ -1,5 +1,12 @@
 # accounting
+
 hledger journal template and tools for my personal accounting
+
+## Prerequisite
+
+LEDGER_FILE must be set as environment variable before using scripts.
+
+    set LEDGER_FILE=%USERPROFILE%\ledger.timeclock
 
 ## Useful accounting links
 
